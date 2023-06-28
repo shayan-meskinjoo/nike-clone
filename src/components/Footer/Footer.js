@@ -1,6 +1,14 @@
 import React from 'react'
 import "./style/Footer.css"
 import { Link } from 'react-router-dom'
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import PlaceIcon from '@mui/icons-material/Place';
+
+import github from "../images/nike/home/pngimg.com - github_PNG37.png"
+
 
 export default function Footer() {
   return (
@@ -15,7 +23,7 @@ export default function Footer() {
             <h5>NIKE JOURNAL</h5>
             <h5>SEND US FEEDBACK</h5>
           </div>
-          <div className='footer-lidt-2'>
+          <div className='footer-list-2'>
             <h5>GET HELP</h5>
             <p>Order Status</p>
             <p>Shiping and Delivery</p>
@@ -25,7 +33,7 @@ export default function Footer() {
             <p>Gift Card Balance</p>
             <p>Contact Us</p>
           </div>
-          <div className='footer-lidt-3'>
+          <div className='footer-list-3'>
             <h5>ABOUT NIKE</h5>
             <p>News</p>
             <p>Careers</p>
@@ -34,8 +42,22 @@ export default function Footer() {
             <p>Sustainability</p>
           </div>
         </div>
+        <div className='breakline'></div>
         <div className='footer-icons'>
-          <h2>some Icons</h2>
+          <Link><TwitterIcon /></Link>
+          <Link><FacebookIcon /></Link>
+          <Link><YouTubeIcon /></Link>
+          <Link><InstagramIcon /></Link>
+        </div>
+      </div>
+
+      <div className='footer-btm'>
+        <div className='footer-btm-copyright'>
+          <div><h5><PlaceIcon /></h5><h5>United States</h5></div>
+          <p>&copy;2023 Nike, Inc. All Right Reserved</p>
+        </div>
+        <div className='footer-btm-github'>
+          <a><img src={github}></img></a>
         </div>
       </div>
     </div>
