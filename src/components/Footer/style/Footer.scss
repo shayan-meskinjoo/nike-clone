@@ -1,0 +1,30 @@
+@import "../../general-styles/__general";
+
+.footer {
+  background-color: $black-col;
+
+  &-container {
+    padding: 48px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-lists {
+    flex: 0.5;
+    display: flex;
+    justify-content: space-between;
+
+    h5 {
+      color: $primary-col;
+      margin-bottom: 16px;
+      font-family: "Oswald", sans-serif;
+      font-size: 14px;
+    }
+
+    p {
+      color: #dddddd8c;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Oswald:wght@700&display=swap");
+.footer {
+  background-color: #111111;
+}
+.footer-container {
+  padding: 48px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-lists {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-lists h5 {
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+}
+.footer-lists p {
+  color: rgba(221, 221, 221, 0.5490196078);
+  font-size: 13px;
+  margin-bottom: 12px;
+}/*# sourceMappingURL=Footer.css.map */
