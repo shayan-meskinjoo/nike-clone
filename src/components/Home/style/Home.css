@@ -84,6 +84,9 @@
   .banner-2-wide {
     display: none;
   }
+  .banner-2 {
+    margin-top: 54px;
+  }
   .banner-2-mobile {
     display: block;
   }
@@ -98,7 +101,7 @@
   }
 }
 .banner-3 {
-  margin-top: 72px;
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,102 +143,5 @@
   }
   .banner-3 button {
     margin-bottom: 8px;
-  }
-}
-.banner-4 {
-  margin-top: 98px;
-  margin-bottom: 98px;
-}
-.banner-4 > p {
-  font-size: 24px;
-  margin-left: 48px;
-  margin-bottom: 32px;
-}
-.banner-4 img {
-  display: block;
-  margin: 0 auto;
-}
-.banner-4-wide {
-  position: relative;
-}
-.banner-4-info {
-  position: absolute;
-  top: 28px;
-  left: 92px;
-  width: 300px;
-}
-.banner-4-info h1 {
-  font-family: "Oswald", sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 0.9;
-  margin-bottom: 24px;
-}
-.banner-4-info p {
-  color: #ffffff;
-  margin-bottom: 24px;
-}
-.banner-4-info button {
-  padding: 6px 18px;
-  border-radius: 32px;
-  border: none;
-  font: inherit;
-  background-color: #ffffff;
-  color: #111111;
-  cursor: pointer;
-  margin-right: 8px;
-}
-.banner-4-info button:hover {
-  opacity: 0.7;
-}
-.banner-4-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .banner-4 > p {
-    margin-left: 24px;
-    font-size: 22px;
-  }
-  .banner-4 img {
-    width: 90%;
-  }
-  .banner-4-wide {
-    display: none;
-  }
-  .banner-4-mobile {
-    display: block;
-    position: relative;
-  }
-  .banner-4-mobile-info {
-    position: absolute;
-    bottom: 28px;
-    left: 42px;
-  }
-  .banner-4-mobile-info h1 {
-    font-family: "Oswald", sans-serif;
-    font-size: 34px;
-    font-weight: 700;
-    color: #ffffff;
-    line-height: 0.9;
-    margin-bottom: 24px;
-  }
-  .banner-4-mobile-info p {
-    color: #ffffff;
-    margin-bottom: 24px;
-  }
-  .banner-4-mobile-info button {
-    padding: 6px 18px;
-    border-radius: 32px;
-    border: none;
-    font: inherit;
-    background-color: #ffffff;
-    color: #111111;
-    cursor: pointer;
-    margin-right: 8px;
-  }
-  .banner-4-mobile-info button:hover {
-    opacity: 0.7;
   }
 }/*# sourceMappingURL=Home.css.map */

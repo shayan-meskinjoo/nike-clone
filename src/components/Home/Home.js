@@ -6,8 +6,8 @@ import banner1mobile from "../images/nike/home/eb9b5b48-8868-4f8a-8fee-4bc4536ee
 import banner2 from "../images/nike/home/nike-just-do-it.jpg";
 import banner2mobile from "../images/nike/home/9cddde26-f335-4989-a72d-ab76f1f49124.webp";
 
-import banner4 from "../images/nike/home/5e4a0ef7-a2c9-483a-8e5b-45d8277db19d.webp";
-import banner4mobile from "../images/nike/home/sign-in.webp";
+
+import MemberShip from "../MemberShip/MemberShip";
 
 export default function Home() {
   return (
@@ -66,9 +66,10 @@ export default function Home() {
         </div>
       </div>
 
+      <MemberShip />
       {/* trending products cruasel */}
 
-      <div className="banner-4">
+      {/* <div className="banner-4">
         <p>Nike Membership</p>
         <div className="banner-4-wide">
           <img src={banner4}></img>
@@ -89,7 +90,7 @@ export default function Home() {
             <button>Sign In</button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Oswald:wght@700&display=swap");
+.container {
+  margin-top: 98px;
+  margin-bottom: 98px;
+}
+.container > p {
+  font-size: 24px;
+  margin-left: 48px;
+  margin-bottom: 32px;
+}
+.container img {
+  display: block;
+  margin: 0 auto;
+}
+.container-wide {
+  position: relative;
+}
+.container-info {
+  position: absolute;
+  top: 28px;
+  left: 92px;
+  width: 300px;
+}
+.container-info h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 0.9;
+  margin-bottom: 24px;
+}
+.container-info p {
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.container-info button {
+  padding: 6px 18px;
+  border-radius: 32px;
+  border: none;
+  font: inherit;
+  background-color: #ffffff;
+  color: #111111;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.container-info button:hover {
+  opacity: 0.7;
+}
+.container-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container > p {
+    margin-left: 24px;
+    font-size: 22px;
+  }
+  .container img {
+    width: 90%;
+  }
+  .container-wide {
+    display: none;
+  }
+  .container-mobile {
+    display: block;
+    position: relative;
+  }
+  .container-mobile-info {
+    position: absolute;
+    bottom: 28px;
+    left: 42px;
+  }
+  .container-mobile-info h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 0.9;
+    margin-bottom: 24px;
+  }
+  .container-mobile-info p {
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  .container-mobile-info button {
+    padding: 6px 18px;
+    border-radius: 32px;
+    border: none;
+    font: inherit;
+    background-color: #ffffff;
+    color: #111111;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .container-mobile-info button:hover {
+    opacity: 0.7;
+  }
+}/*# sourceMappingURL=MemberShip.css.map */

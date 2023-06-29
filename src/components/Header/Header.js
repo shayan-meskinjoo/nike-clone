@@ -18,7 +18,7 @@ export default function Header() {
           <img src={logo}></img>
         </div>
         <div className="header__nav">
-          <Link>Men</Link>
+          <Link to='men'>Men</Link>
           <Link>Women</Link>
           <Link>Accessories</Link>
         </div>
@@ -42,7 +42,7 @@ export default function Header() {
                 <CloseIcon />
               </button>
             </Link>
-            <Link>
+            <Link to='men'>
               Men <ArrowForwardIosIcon />
             </Link>
             <Link>
