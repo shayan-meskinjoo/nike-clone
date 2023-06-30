@@ -1,70 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Oswald:wght@700&display=swap");
-.banner-1-header {
+.banner-1-women-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 32px 48px 40px;
 }
-.banner-1-header p {
+.banner-1-women-header p {
   font-size: 22px;
   font-weight: 500;
 }
-.banner-1-links {
+.banner-1-women-links {
   display: flex;
   gap: 32px;
-  margin-left: -80px;
+  margin-left: -112px;
 }
-.banner-1-links a {
+.banner-1-women-links a {
   color: #111111;
   font-size: 15px;
   font-weight: 500;
 }
-.banner-1-links a:hover {
+.banner-1-women-links a:hover {
   opacity: 0.7;
 }
-.banner-1-wide {
+.banner-1-women-wide {
   display: block;
   margin: 0 auto;
 }
-.banner-1-mobile {
+.banner-1-women-mobile {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  .banner-1-header {
+  .banner-1-women-header {
     flex-direction: column;
     align-items: flex-start;
     padding: 38px 24px 8px;
     gap: 16px;
   }
-  .banner-1-wide {
+  .banner-1-women-wide {
     display: none;
   }
-  .banner-1-mobile {
+  .banner-1-women-mobile {
     display: block;
     width: 90%;
     margin: 0 auto;
   }
-  .banner-1-links {
+  .banner-1-women-links {
     margin-left: 0;
   }
 }
-.banner-1-info {
-  margin-top: 72px;
+.banner-1-women-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 450px;
+  margin: 72px auto;
+  text-align: center;
 }
-.banner-1-info h1 {
+.banner-1-women-info h1 {
   font-family: "Oswald", sans-serif;
   font-size: 60px;
   margin-bottom: 24px;
   line-height: 0.9;
 }
-.banner-1-info-btn {
+.banner-1-women-info-btn {
   margin-top: 24px;
 }
-.banner-1-info button {
+.banner-1-women-info button {
   padding: 7px 18px;
   margin-right: 8px;
   border-radius: 32px;
@@ -74,69 +76,71 @@
   color: #ffffff;
   cursor: pointer;
 }
-.banner-1-info button:hover {
+.banner-1-women-info button:hover {
   opacity: 0.7;
 }
 
 @media screen and (max-width: 768px) {
-  .banner-1-info {
+  .banner-1-women-info {
     margin-left: 24px;
     margin-top: 48px;
     align-items: flex-start;
+    text-align: left;
+    width: 300px;
   }
-  .banner-1-info-btn {
+  .banner-1-women-info-btn {
     margin-top: 24px;
   }
-  .banner-1-info h1 {
-    font-size: 42px;
+  .banner-1-women-info h1 {
+    font-size: 40px;
   }
-  .banner-1-info button {
+  .banner-1-women-info button {
     margin-bottom: 8px;
   }
 }
-.banner-2-wide {
-  padding: 96px 0;
+.banner-2-women-wide {
+  padding: 48px 0 72px;
 }
-.banner-2-wide > p {
+.banner-2-women-wide > p {
   font-size: 22px;
   font-weight: 500;
   margin: 0 0 32px 48px;
 }
-.banner-2-wide a {
+.banner-2-women-wide a {
   color: #111111;
   font-size: 18x;
 }
-.banner-2-flex {
+.banner-2-women-flex {
   display: flex;
   padding: 0 48px;
 }
-.banner-2-flex-2 {
+.banner-2-women-flex-2-women {
   display: flex;
   flex-direction: column;
 }
-.banner-2-left {
+.banner-2-women-left {
   position: relative;
 }
-.banner-2-left img {
+.banner-2-women-left img {
   width: 98%;
   height: 932px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.banner-2-right {
+.banner-2-women-right {
   position: relative;
   height: 100%;
 }
-.banner-2-right img {
+.banner-2-women-right img {
   height: 97%;
 }
-.banner-2-right-btm {
+.banner-2-women-right-btm {
   position: relative;
 }
-.banner-2-right-btm img {
+.banner-2-women-right-btm img {
   width: 99%;
 }
-.banner-2-info {
+.banner-2-women-info {
   position: absolute;
   bottom: 68px;
   left: 24px;
@@ -145,11 +149,11 @@
   align-items: flex-start;
   gap: 24px;
 }
-.banner-2-info p {
+.banner-2-women-info p {
   margin: 0;
   font-size: 22px;
 }
-.banner-2-info button {
+.banner-2-women-info button {
   padding: 8px 18px;
   margin-right: 8px;
   border-radius: 32px;
@@ -159,29 +163,30 @@
   color: #ffffff;
   cursor: pointer;
 }
-.banner-2-info button:hover {
+.banner-2-women-info button:hover {
   opacity: 0.7;
 }
-.banner-2-mobile {
+.banner-2-women-mobile {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  .banner-2-wide {
+  .banner-2-women-wide {
     display: none;
   }
-  .banner-2-mobile {
+  .banner-2-women-mobile {
     display: block;
     margin-top: 80px;
   }
-  .banner-2-mobile p {
+  .banner-2-women-mobile p {
     font-size: 20px;
     font-weight: 500;
+    padding: 0 24px;
   }
   ::-webkit-scrollbar {
     width: 0px;
   }
-  .banner-2-scroll {
+  .banner-2-women-scroll {
     display: flex;
     overflow-x: scroll;
     width: 100%;
@@ -224,4 +229,4 @@
   .banner-info button:hover {
     opacity: 0.7;
   }
-}/*# sourceMappingURL=Men.css.map */
+}/*# sourceMappingURL=Women.css.map */

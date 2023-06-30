@@ -1,6 +1,6 @@
 @import "../../general-styles/__general";
 
-.banner-1 {
+.banner-1-women {
   &-header {
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
   &-links {
     display: flex;
     gap: 32px;
-    margin-left: -80px;
+    margin-left: -112px;
 
     a {
       color: $black-col;
@@ -40,7 +40,7 @@
 }
 
 @include mobile {
-  .banner-1 {
+  .banner-1-women {
     &-header {
       flex-direction: column;
       align-items: flex-start;
@@ -64,11 +64,13 @@
   }
 }
 
-.banner-1-info {
-  margin-top: 72px;
+.banner-1-women-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 450px;
+  margin: 72px auto;
+  text-align: center;
 
   h1 {
     font-family: "Oswald", sans-serif;
@@ -98,16 +100,18 @@
 }
 
 @include mobile {
-  .banner-1-info {
+  .banner-1-women-info {
     margin-left: 24px;
     margin-top: 48px;
     align-items: flex-start;
+    text-align: left;
+    width: 300px;
 
     &-btn {
       margin-top: 24px;
     }
     h1 {
-      font-size: 42px;
+      font-size: 40px;
     }
 
     button {
@@ -116,9 +120,9 @@
   }
 }
 
-.banner-2 {
+.banner-2-women {
   &-wide {
-    padding: 96px 0;
+    padding: 48px 0 72px;
 
     & > p {
       font-size: 22px;
@@ -138,7 +142,7 @@
     padding: 0 48px;
   }
 
-  &-flex-2 {
+  &-flex-2-women {
     display: flex;
     flex-direction: column;
   }
@@ -205,17 +209,18 @@
 
 @include mobile {
 
-  .banner-2-wide {
+  .banner-2-women-wide {
     display: none;
   }
 
-  .banner-2-mobile {
+  .banner-2-women-mobile {
     display: block;
     margin-top: 80px;
 
     p {
       font-size: 20px;
       font-weight: 500;
+      padding: 0 24px;
     }
   }
 
@@ -223,7 +228,7 @@
     width: 0px;
   }
 
-  .banner-2-scroll {
+  .banner-2-women-scroll {
     display: flex;
     overflow-x: scroll;
     width: 100%;
@@ -279,3 +284,4 @@
     }
   }
 }
+

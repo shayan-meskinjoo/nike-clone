@@ -19,7 +19,7 @@ export default function Header() {
         </div>
         <div className="header__nav">
           <Link to='men'>Men</Link>
-          <Link>Women</Link>
+          <Link to="women">Women</Link>
           <Link>Accessories</Link>
         </div>
         <div className="header__icons">
@@ -45,7 +45,7 @@ export default function Header() {
             <Link to='men'>
               Men <ArrowForwardIosIcon />
             </Link>
-            <Link>
+            <Link to="women">
               Women <ArrowForwardIosIcon />
             </Link>
             <Link>
