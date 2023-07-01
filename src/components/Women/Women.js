@@ -39,7 +39,10 @@ export default function Women() {
       <div className="banner-2-women-wide">
         <p>Shop the Essentials</p>
         <div className="banner-2-women-flex">
-          <Link>
+          <Link
+            to="/productslist"
+            state={{ gender: "women", category: "clothing" }}
+          >
             <div className="banner-2-women-left">
               <img src={banner21}></img>
               <div className="banner-2-women-info">
@@ -49,7 +52,10 @@ export default function Women() {
             </div>
           </Link>
           <div className="banner-2-women-flex-2-women">
-            <Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "women", category: "shoes" }}
+            >
               <div className="banner-2-women-right">
                 <img src={banner22}></img>
                 <div className="banner-2-women-info">
@@ -58,7 +64,10 @@ export default function Women() {
                 </div>
               </div>
             </Link>
-            <Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "unisex", category: "accessories" }}
+            >
               <div className="banner-2-women-right-btm">
                 <img src={banner23}></img>
                 <div className="banner-2-women-info">
@@ -74,27 +83,42 @@ export default function Women() {
       <div className="banner-2-women-mobile">
         <p>Shop The Essentials</p>
         <div className="banner-2-women-scroll">
-          <div className="banner-21-mobile">
-            <img src={banner21}></img>
-            <div className="banner-info">
-              <p>Clothing</p>
-              <button>Shop</button>
+          <Link
+            to="/productslist"
+            state={{ gender: "women", category: "clothing" }}
+          >
+            <div className="banner-21-mobile">
+              <img src={banner21}></img>
+              <div className="banner-info">
+                <p>Clothing</p>
+                <button>Shop</button>
+              </div>
             </div>
-          </div>
-          <div className="banner-22-mobile">
-            <img src={banner22}></img>
-            <div className="banner-info">
-              <p>Shoes</p>
-              <button>Shop</button>
+          </Link>
+          <Link
+            to="/productslist"
+            state={{ gender: "women", category: "shoes" }}
+          >
+            <div className="banner-22-mobile">
+              <img src={banner22}></img>
+              <div className="banner-info">
+                <p>Shoes</p>
+                <button>Shop</button>
+              </div>
             </div>
-          </div>
-          <div className="banner-23-mobile">
-            <img src={banner23}></img>
-            <div className="banner-info">
-              <p>Accessories</p>
-              <button>Shop</button>
+          </Link>
+          <Link
+            to="/productslist"
+            state={{ gender: "unisex", category: "accessories" }}
+          >
+            <div className="banner-23-mobile">
+              <img src={banner23}></img>
+              <div className="banner-info">
+                <p>Accessories</p>
+                <button>Shop</button>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 

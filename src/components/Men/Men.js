@@ -41,7 +41,10 @@ export default function Men() {
       <div className="banner-2-wide">
         <p>Shop the Essentials</p>
         <div className="banner-2-flex">
-          <Link>
+          <Link
+            to="/productslist"
+            state={{ gender: "men", category: "clothing" }}
+          >
             <div className="banner-2-left">
               <img src={banner21}></img>
               <div className="banner-2-info">
@@ -51,7 +54,10 @@ export default function Men() {
             </div>
           </Link>
           <div className="banner-2-flex-2">
-            <Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "men", category: "shoes" }}
+            >
               <div className="banner-2-right">
                 <img src={banner22}></img>
                 <div className="banner-2-info">
@@ -60,7 +66,10 @@ export default function Men() {
                 </div>
               </div>
             </Link>
-            <Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "unisex", category: "accessories" }}
+            >
               <div className="banner-2-right-btm">
                 <img src={banner23}></img>
                 <div className="banner-2-info">

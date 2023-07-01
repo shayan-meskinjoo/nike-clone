@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Oswald:wght@700&display=swap");
+.card {
+  width: 250px;
+  margin: 32px 48px;
+  color: #111111;
+}
+.card img {
+  height: 250px;
+}
+.card h3 {
+  padding: 8px 0;
+}
+.card p {
+  padding: 8px 0;
+}
+.card:hover {
+  transform: scale(1.015);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 150px;
+  }
+  .card img {
+    height: 150px;
+  }
+  .card a {
+    width: 150px;
+  }
+}/*# sourceMappingURL=ProductCard.css.map */
