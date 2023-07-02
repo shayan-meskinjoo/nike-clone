@@ -1,0 +1,39 @@
+@import "../../general-styles/__general";
+
+.list-container {
+  padding: 0 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+
+.list-container-top {
+  padding: 32px 0;
+  p {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+@include mobile {
+  .list-container {
+    padding: 0;
+  }
+  .products-list {
+    gap: 8px;
+  }
+  .list-container-top {
+    padding: 32px 16px;
+    p {
+      font-size: 18px;
+    }
+  }
+}

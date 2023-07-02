@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Oswald:wght@700&display=swap");
+.detail-container {
+  padding: 48px 116px;
+  display: flex;
+  gap: 92px;
+}
+.detail-right {
+  width: 360px;
+}
+.detail-right .detail-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+.detail-right .detail-gender {
+  text-transform: capitalize;
+  font-weight: 500;
+  padding-top: 4px;
+}
+.detail-right .detail-price {
+  font-weight: 700;
+  padding-top: 24px;
+}
+.detail-right .detail-desc {
+  padding: 32px 0 48px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.detail-right .detail-addbag button {
+  width: 100%;
+  padding: 18px 32px;
+  border: none;
+  border-radius: 40px;
+  background-color: #111111;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+.detail-right .detail-addbag button:hover {
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+.detail-right .detail-addfav {
+  padding-top: 16px;
+}
+.detail-right .detail-addfav button {
+  width: 100%;
+  padding: 18px 32px;
+  border: 1px solid #bbb;
+  border-radius: 40px;
+  background-color: #ffffff;
+  color: #111111;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.detail-right .detail-addfav button:hover {
+  transition: all 0.2s;
+  border: 1px solid #111111;
+}
+
+.detail-mobile-container {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .detail-container {
+    display: none;
+  }
+  .detail-mobile-container {
+    display: block;
+  }
+  .detail-mobile-top {
+    padding: 32px 24px;
+  }
+  .detail-mobile-top-name {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .detail-mobile-top-gender {
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-top: 4px;
+  }
+  .detail-mobile-top-price {
+    font-weight: 700;
+    padding-top: 18px;
+  }
+  .detail-mobile-img img {
+    width: 100%;
+  }
+  .detail-mobile-addbag {
+    padding: 72px 36px 0;
+  }
+  .detail-mobile-addbag button {
+    width: 100%;
+    padding: 18px 32px;
+    border: none;
+    border-radius: 40px;
+    background-color: #111111;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .detail-mobile-addbag button:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+  }
+  .detail-mobile-addfav {
+    padding: 16px 36px 0;
+  }
+  .detail-mobile-addfav button {
+    width: 100%;
+    padding: 18px 32px;
+    border: 1px solid #bbb;
+    border-radius: 40px;
+    background-color: #ffffff;
+    color: #111111;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .detail-mobile-addfav button:hover {
+    transition: all 0.2s;
+    border: 1px solid #111111;
+  }
+  .detail-mobile-desc {
+    padding: 72px 36px 48px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+}/*# sourceMappingURL=ProductDetail.css.map */

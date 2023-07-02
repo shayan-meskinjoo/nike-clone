@@ -18,9 +18,14 @@ export default function Header() {
           <img src={logo}></img>
         </div>
         <div className="header__nav">
-          <Link to='men'>Men</Link>
+          <Link to="men">Men</Link>
           <Link to="women">Women</Link>
-          <Link>Accessories</Link>
+          <Link
+            to="/productslist"
+            state={{ gender: "unisex", category: "accessories" }}
+          >
+            Accessories
+          </Link>
         </div>
         <div className="header__icons">
           <Link>
@@ -38,17 +43,20 @@ export default function Header() {
           <div className={`header-sidebar__nav ${isOpen && "isopen"}`}>
             <Link>
               <span></span>
-              <button onClick={()=> setIsOpen(!isOpen)}>
+              <button onClick={() => setIsOpen(!isOpen)}>
                 <CloseIcon />
               </button>
             </Link>
-            <Link to='men'>
+            <Link to="men">
               Men <ArrowForwardIosIcon />
             </Link>
             <Link to="women">
               Women <ArrowForwardIosIcon />
             </Link>
-            <Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "unisex", category: "accessories" }}
+            >
               Accessories <ArrowForwardIosIcon />
             </Link>
           </div>

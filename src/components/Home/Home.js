@@ -6,7 +6,6 @@ import banner1mobile from "../images/nike/home/eb9b5b48-8868-4f8a-8fee-4bc4536ee
 import banner2 from "../images/nike/home/nike-just-do-it.jpg";
 import banner2mobile from "../images/nike/home/9cddde26-f335-4989-a72d-ab76f1f49124.webp";
 
-
 import MemberShip from "../MemberShip/MemberShip";
 
 export default function Home() {
@@ -54,43 +53,23 @@ export default function Home() {
         <h1>ADVENTURE ESSENTIALS</h1>
         <p>Styles designed to take on the wildest parts of any trip.</p>
         <div className="banner-3-btns">
-          <Link>
+          <Link to="men">
             <button>Shop Men's</button>
           </Link>
-          <Link>
+          <Link to="women">
             <button>Shop Women's</button>
           </Link>
-          <Link>
+          <Link
+            to="/productslist"
+            state={{ gender: "unisex", category: "accessories" }}
+          >
             <button>Shop Accessories</button>
           </Link>
         </div>
       </div>
 
-      <MemberShip />
       {/* trending products cruasel */}
-
-      {/* <div className="banner-4">
-        <p>Nike Membership</p>
-        <div className="banner-4-wide">
-          <img src={banner4}></img>
-          <div className="banner-4-info">
-            <h1>BECOME A MEMBER</h1>
-            <p>sign up for free. Join the community.</p>
-            <button>Join Us</button>
-            <button>Sign In</button>
-          </div>
-        </div>
-
-        <div className="banner-4-mobile">
-          <img src={banner4mobile}></img>
-          <div className="banner-4-mobile-info">
-            <h1>BECOME A MEMBER</h1>
-            <p>sign up for free. Join the community.</p>
-            <button>Join Us</button>
-            <button>Sign In</button>
-          </div>
-        </div>
-      </div> */}
+      <MemberShip />
     </div>
   );
 }

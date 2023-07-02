@@ -1,33 +1,39 @@
 @import "../../general-styles/__general";
 
 .card {
-  width: 250px;
-  margin: 32px 48px;
+  width: 400px;
+  margin: 0 0 32px;
   color: $black-col;
   img {
-    height: 250px;
+    width: 100%;
   }
-  h3 {
-    padding: 8px 0;
+  &-name {
+    padding: 8px 8px 4px;
+    font-size: 18px;
   }
-  p {
-    padding: 8px 0;
+  &-colors {
+    padding: 0 8px 4px;
+    font-size: 15px;
+    opacity: 0.6;
+    text-transform: capitalize;
+  }
+  &-price {
+    padding: 16px 8px 0;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  a {
+    color: $black-col;
   }
 
   &:hover {
-    transform: scale(1.015);
+    transform: scale(1.01);
   }
 }
 
 @include mobile {
   .card {
-    width: 150px;
-    img {
-      height: 150px;
-    }
-    
-    a {
-      width: 150px;
-    }
+    width: 170px;
   }
 }

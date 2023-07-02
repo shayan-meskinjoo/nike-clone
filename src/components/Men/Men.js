@@ -15,9 +15,24 @@ export default function Men() {
         <div className="banner-1-header">
           <p>Men</p>
           <div className="banner-1-links">
-            <Link>Shoes</Link>
-            <Link>Clothing</Link>
-            <Link>Accessories</Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "men", category: "shoes" }}
+            >
+              Shoes
+            </Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "men", category: "clothing" }}
+            >
+              Clothing
+            </Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "unisex", category: "accessories" }}
+            >
+              Accessories
+            </Link>
           </div>
           <div></div>
         </div>

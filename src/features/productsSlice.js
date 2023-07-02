@@ -542,10 +542,10 @@ const productsSlice = createSlice({
   reducers: {
     filterProducts: (state, action) => {
       const { gender, category } = action.payload;
-      const filtered = state.allProducts.filter(
+      const newFilteredList = state.allProducts.filter(
         (product) => product.gender === gender && product.category === category
       );
-      state.filteredProducts = filtered
+      state.filteredProducts = newFilteredList
     },
   },
 });

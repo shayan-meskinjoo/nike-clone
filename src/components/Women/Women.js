@@ -16,9 +16,24 @@ export default function Women() {
         <div className="banner-1-women-header">
           <p>Women</p>
           <div className="banner-1-women-links">
-            <Link>Shoes</Link>
-            <Link>Clothing</Link>
-            <Link>Accessories</Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "women", category: "shoes" }}
+            >
+              Shoes
+            </Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "women", category: "clothing" }}
+            >
+              Clothing
+            </Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "unisex", category: "accessories" }}
+            >
+              Accessories
+            </Link>
           </div>
           <div></div>
         </div>
@@ -122,6 +137,7 @@ export default function Women() {
         </div>
       </div>
 
+      {/* trending list */}
       <MemberShip />
     </div>
   );

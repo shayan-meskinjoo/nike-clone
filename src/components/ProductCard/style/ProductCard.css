@@ -1,30 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Oswald:wght@700&display=swap");
 .card {
-  width: 250px;
-  margin: 32px 48px;
+  width: 400px;
+  margin: 0 0 32px;
   color: #111111;
 }
 .card img {
-  height: 250px;
+  width: 100%;
 }
-.card h3 {
-  padding: 8px 0;
+.card-name {
+  padding: 8px 8px 4px;
+  font-size: 18px;
 }
-.card p {
-  padding: 8px 0;
+.card-colors {
+  padding: 0 8px 4px;
+  font-size: 15px;
+  opacity: 0.6;
+  text-transform: capitalize;
+}
+.card-price {
+  padding: 16px 8px 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+.card a {
+  color: #111111;
 }
 .card:hover {
-  transform: scale(1.015);
+  transform: scale(1.01);
 }
 
 @media screen and (max-width: 768px) {
   .card {
-    width: 150px;
-  }
-  .card img {
-    height: 150px;
-  }
-  .card a {
-    width: 150px;
+    width: 170px;
   }
 }/*# sourceMappingURL=ProductCard.css.map */
