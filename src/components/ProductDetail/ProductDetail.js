@@ -1,8 +1,9 @@
 import React from "react";
 import "./style/ProductDetail.css";
 import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import { addToBag } from "../../features/productsSlice";
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -11,6 +12,8 @@ export default function ProductDetail() {
   const product = allProducts.find((product) => product.id == id);
 
   const { img, name, desc, price, category, gender } = product;
+
+  const dispatch = useDispatch();
 
   return (
     <div className="detail">
@@ -24,7 +27,7 @@ export default function ProductDetail() {
           <p className="detail-price">${price}</p>
           <p className="detail-desc">{desc}</p>
           <div className="detail-addbag">
-            <button>Add to Bag</button>
+            <button onClick={() => dispatch(addToBag(id))}>Add to Bag</button>
           </div>
           <div className="detail-addfav">
             <button>
@@ -45,7 +48,7 @@ export default function ProductDetail() {
           <img src={img}></img>
         </div>
         <div className="detail-mobile-addbag">
-          <button>Add to Bag</button>
+          <button onClick={() => dispatch(addToBag(id))}>Add to Bag</button>
         </div>
         <div className="detail-mobile-addfav">
           <button>

@@ -41,7 +41,7 @@
 
         &:hover {
           opacity: 0.8;
-          transition: all 0.2s;
+          transition: all 0.1s;
         }
       }
     }
@@ -63,7 +63,7 @@
         gap: 8px;
 
         &:hover {
-          transition: all 0.2s;
+          transition: all 0.1s;
           border: 1px solid $black-col;
         }
       }

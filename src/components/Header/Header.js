@@ -11,6 +11,11 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const menuHandler = (e) => {
+    e.preventDefault()
+    setIsOpen(!isOpen)
+  }
+  
   return (
     <div className="header">
       <div className="header__content">
@@ -43,7 +48,7 @@ export default function Header() {
           <div className={`header-sidebar__nav ${isOpen && "isopen"}`}>
             <Link>
               <span></span>
-              <button onClick={() => setIsOpen(!isOpen)}>
+              <button onClick={(e) => menuHandler(e)}>
                 <CloseIcon />
               </button>
             </Link>
@@ -68,7 +73,7 @@ export default function Header() {
               <ShoppingBagOutlinedIcon />
             </Link>
             <Link>
-              <button onClick={() => setIsOpen(!isOpen)}>
+              <button onClick={(e) => menuHandler(e)}>
                 <MenuIcon />
               </button>
             </Link>

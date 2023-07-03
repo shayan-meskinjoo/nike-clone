@@ -534,6 +534,7 @@ const initialState = {
     },
   ],
   filteredProducts: [],
+  bagItems: [],
 };
 
 const productsSlice = createSlice({
@@ -545,10 +546,42 @@ const productsSlice = createSlice({
       const newFilteredList = state.allProducts.filter(
         (product) => product.gender === gender && product.category === category
       );
-      state.filteredProducts = newFilteredList
+      state.filteredProducts = newFilteredList;
+    },
+    addToBag: (state, action) => {
+      const item = state.bagItems.find((item) => item.id === action.payload);
+      if (item) {
+        item.amount++;
+      } else {
+        state.bagItems.push({ id: action.payload, amount: 1 });
+      }
+    },
+    increament: (state, action) => {
+      const item = state.bagItems.find((item) => item.id === action.payload);
+      item.amount++;
+    },
+    decreament: (state, action) => {
+      const item = state.bagItems.find((item) => item.id === action);
+      if (item.amount === 1) {
+        item.amount = 1;
+      } else {
+        item.amount--;
+      }
+    },
+    removeFromBag: (state, action) => {
+      const newBag = state.bagItems.filter(
+        (item) => item.id !== action.payload
+      );
+      state.bagItems = newBag;
     },
   },
 });
 
-export const { filterProducts } = productsSlice.actions
+export const {
+  filterProducts,
+  addToBag,
+  increament,
+  decreament,
+  removeFromBag,
+} = productsSlice.actions;
 export default productsSlice.reducer;

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./style/ProductsList.css"
+import "./style/ProductsList.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { filterProducts } from "../../features/productsSlice";
@@ -23,11 +23,13 @@ export default function ProductsList() {
   return (
     <div className="list-container">
       <div className="list-container-top">
-        <div><p>{`${gender}'s ${category}`}</p></div>
+        <div>
+          <p>{`${gender}'s ${category}`}</p>
+        </div>
       </div>
       <div className="products-list">
         {filteredProducts.map((product) => (
-          <ProductCard data={product} />
+          <ProductCard data={product} key={product.id}/>
         ))}
       </div>
 
