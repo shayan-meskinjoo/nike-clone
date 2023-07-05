@@ -1,0 +1,98 @@
+@import "../../general-styles/__general";
+
+.bag-card {
+  padding:32px 0 32px;
+  border-bottom: 1px solid #bbbbbbb0;
+  img {
+    height: 180px;
+    padding-right: 24px;
+  }
+
+  &-top {
+    display: flex;
+  }
+
+  &-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-name {
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  &-price {
+    font-weight: 500;
+  }
+  &-gender {
+    opacity: 0.6;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &-quantity {
+    display: flex;
+    &-text {
+      opacity: 0.6;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    &-actions {
+      display: flex;
+      padding-left: 16px;
+      
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      p {
+        padding: 0 8px;
+        opacity: 0.6;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &-btn {
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding-right: 14px;
+    }
+  }
+
+  &-bottom {
+    padding-top: 16px;
+    p {
+      padding-top: 6px;
+    }
+  }
+}
+
+@include mobile {
+  .bag-card {
+    img {
+      height: 120px;
+    }
+    &-header {
+      flex-direction: column-reverse;
+      gap: 8px;
+    }
+    &-name {
+      font-size: 16px;
+      line-height: 0.95;
+    }
+  }
+}

@@ -561,7 +561,7 @@ const productsSlice = createSlice({
       item.amount++;
     },
     decreament: (state, action) => {
-      const item = state.bagItems.find((item) => item.id === action);
+      const item = state.bagItems.find((item) => item.id === action.payload);
       if (item.amount === 1) {
         item.amount = 1;
       } else {

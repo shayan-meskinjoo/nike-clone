@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import { addToBag } from "../../features/productsSlice";
+import MemberShip from "../MemberShip/MemberShip";
+
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -60,6 +62,9 @@ export default function ProductDetail() {
           <p>{desc}</p>
         </div>
       </div>
+
+      {/* trending */}
+      <MemberShip />
     </div>
   );
 }

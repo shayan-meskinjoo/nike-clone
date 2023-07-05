@@ -36,7 +36,7 @@ export default function Header() {
           <Link>
             <FavoriteBorderOutlinedIcon />
           </Link>
-          <Link>
+          <Link to="cart">
             <ShoppingBagOutlinedIcon />
           </Link>
         </div>
@@ -69,7 +69,7 @@ export default function Header() {
             <Link>
               <FavoriteBorderOutlinedIcon />
             </Link>
-            <Link>
+            <Link to="cart">
               <ShoppingBagOutlinedIcon />
             </Link>
             <Link>

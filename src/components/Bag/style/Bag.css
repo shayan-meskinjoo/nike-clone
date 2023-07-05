@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Oswald:wght@700&display=swap");
+.bag-container {
+  padding: 32px 140px 32px 114px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bag-summary {
+  flex: 0.32;
+}
+.bag-summary-title {
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 24px;
+}
+.bag-summary-divs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.bag-summary-p {
+  font-weight: 500;
+}
+.bag-summary hr {
+  border-top: 1px solid rgba(218, 217, 217, 0.6235294118);
+  margin: 8px 0 16px 0;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 18px 32px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 40px;
+  background-color: #111111;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+}
+.checkout-btn:hover {
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+
+.paypal-btn {
+  width: 100%;
+  padding: 18px 32px;
+  border: 1px solid #bbb;
+  border-radius: 40px;
+  background-color: #ffffff;
+  color: #111111;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.paypal-btn:hover {
+  transition: all 0.2s;
+  border: 1px solid #111111;
+}
+
+.bag-items {
+  flex: 0.65;
+}
+
+.bag-text {
+  padding: 0 0 16px;
+}
+.bag-text p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.bag-left {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+}
+
+@media screen and (max-width: 768px) {
+  .bag-container {
+    flex-direction: column;
+    padding: 32px 16px;
+    align-items: center;
+  }
+  .bag-summary {
+    flex: 1;
+    width: 100%;
+    padding-top: 48px;
+  }
+  .bag-left {
+    flex: 1;
+    width: 100%;
+  }
+}/*# sourceMappingURL=Bag.css.map */

@@ -1,0 +1,108 @@
+@import "../../general-styles/__general";
+
+.bag-container {
+  padding: 32px 140px 32px 114px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.bag-summary {
+  flex: 0.32;
+
+  &-title {
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 24px;
+  }
+
+  &-divs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  &-p {
+    font-weight: 500;
+  }
+
+  hr {
+    border-top: 1px solid #dad9d99f;
+    margin: 8px 0 16px 0;
+  }
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 18px 32px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 40px;
+  background-color: $black-col;
+  color: $primary-col;
+  font: inherit;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.2s;
+  }
+}
+
+.paypal-btn {
+  width: 100%;
+  padding: 18px 32px;
+  border: 1px solid #bbb;
+  border-radius: 40px;
+  background-color: $primary-col;
+  color: $black-col;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &:hover {
+    transition: all 0.2s;
+    border: 1px solid $black-col;
+  }
+}
+
+.bag-items {
+  flex: 0.65
+}
+
+.bag-text {
+  padding: 0 0 16px;
+
+  p {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+.bag-left {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+}
+
+@include mobile {
+  .bag-container {
+    flex-direction: column;
+    padding: 32px 16px;
+    align-items: center;
+  }
+  .bag-summary {
+    flex: 1;
+    width: 100%;
+    padding-top: 48px;
+  }
+  .bag-left {
+    flex: 1;
+    width: 100%;
+  }
+
+}
