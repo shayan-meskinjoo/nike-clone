@@ -54,6 +54,25 @@
   display: none;
 }
 
+.bag-icon {
+  position: relative;
+}
+
+.bag-amount {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2px;
+  right: 2px;
+  background-color: #111111;
+  color: #ffffff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     padding: 0 0 60px;

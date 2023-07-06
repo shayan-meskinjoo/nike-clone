@@ -90,7 +90,7 @@ const initialState = {
       price: 130,
       category: "shoes",
       gender: "men",
-      trending: true,
+      trending: false,
     },
     {
       id: "5",
@@ -110,7 +110,7 @@ const initialState = {
       price: 144,
       category: "shoes",
       gender: "men",
-      trending: true,
+      trending: false,
     },
     {
       id: "7",
@@ -230,7 +230,7 @@ const initialState = {
       price: 50,
       category: "clothing",
       gender: "men",
-      trending: true,
+      trending: false,
     },
     {
       id: "19",
@@ -260,7 +260,7 @@ const initialState = {
       price: 100,
       category: "shoes",
       gender: "women",
-      trending: false,
+      trending: true,
     },
     {
       id: "22",
@@ -280,7 +280,7 @@ const initialState = {
       price: 160,
       category: "shoes",
       gender: "women",
-      trending: false,
+      trending: true,
     },
     {
       id: "24",
@@ -310,7 +310,7 @@ const initialState = {
       price: 155,
       category: "shoes",
       gender: "women",
-      trending: true,
+      trending: false,
     },
     {
       id: "27",
@@ -370,7 +370,7 @@ const initialState = {
       price: 50,
       category: "clothing",
       gender: "women",
-      trending: true,
+      trending: false,
     },
     {
       id: "33",
@@ -480,7 +480,7 @@ const initialState = {
       price: 45,
       category: "accessories",
       gender: "unisex",
-      trending: false,
+      trending: true,
     },
     {
       id: "44",
@@ -535,6 +535,7 @@ const initialState = {
   ],
   filteredProducts: [],
   bagItems: [],
+  favoriteItems: [],
 };
 
 const productsSlice = createSlice({
@@ -574,6 +575,23 @@ const productsSlice = createSlice({
       );
       state.bagItems = newBag;
     },
+    addToFav: (state, action) => {
+      const favoriteItem = state.favoriteItems.find(
+        (item) => item.id === action.payload
+      );
+      if (favoriteItem) {
+        return;
+      } else {
+        state.favoriteItems.push({ id: action.payload, amount: 1 });
+      }
+    },
+    removeFromFav: (state, action) => {
+      const newList = state.favoriteItems.filter(
+        (item) => item.id !== action.payload
+      );
+
+      state.favoriteItems = newList;
+    },
   },
 });
 
@@ -583,5 +601,7 @@ export const {
   increament,
   decreament,
   removeFromBag,
+  addToFav,
+  removeFromFav,
 } = productsSlice.actions;
 export default productsSlice.reducer;

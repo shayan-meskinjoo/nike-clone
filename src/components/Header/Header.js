@@ -7,15 +7,26 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuHandler = (e) => {
-    e.preventDefault()
-    setIsOpen(!isOpen)
-  }
-  
+    e.preventDefault();
+    setIsOpen(!isOpen);
+  };
+
+  const bagItems = useSelector((state) => state.products.bagItems);
+
+  const getTotalAmount = () => {
+    let totalAmount = 0;
+    bagItems.map((item) => {
+      totalAmount += item.amount;
+    });
+    return totalAmount;
+  };
+
   return (
     <div className="header">
       <div className="header__content">
@@ -33,10 +44,15 @@ export default function Header() {
           </Link>
         </div>
         <div className="header__icons">
-          <Link>
+          <Link to="favorites">
             <FavoriteBorderOutlinedIcon />
           </Link>
-          <Link to="cart">
+          <Link to="cart" className="bag-icon">
+            {getTotalAmount() > 0 ? (
+              <div className="bag-amount">{getTotalAmount()}</div>
+            ) : (
+              ""
+            )}
             <ShoppingBagOutlinedIcon />
           </Link>
         </div>
@@ -66,10 +82,15 @@ export default function Header() {
             </Link>
           </div>
           <div className="header-sidebar__icons">
-            <Link>
+            <Link to="favorites">
               <FavoriteBorderOutlinedIcon />
             </Link>
-            <Link to="cart">
+            <Link to="cart" className="bag-icon">
+              {getTotalAmount() > 0 ? (
+                <div className="bag-amount">{getTotalAmount()}</div>
+              ) : (
+                ""
+              )}
               <ShoppingBagOutlinedIcon />
             </Link>
             <Link>

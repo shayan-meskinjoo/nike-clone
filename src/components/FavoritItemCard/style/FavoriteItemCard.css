@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Oswald:wght@700&display=swap");
+a {
+  color: #111111;
+}
+
+.fav-card-top {
+  display: flex;
+  padding: 32px 0 32px;
+  border-bottom: 1px solid rgba(187, 187, 187, 0.6901960784);
+}
+.fav-card-top img {
+  height: 180px;
+  padding-right: 24px;
+}
+.fav-card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.fav-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.fav-card-name {
+  font-size: 19px;
+  font-weight: 500;
+}
+.fav-card-price {
+  font-weight: 500;
+}
+.fav-card-gender {
+  opacity: 0.6;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+}
+.fav-card-quantity {
+  display: flex;
+}
+.fav-card-quantity-text {
+  opacity: 0.6;
+  font-size: 15px;
+  font-weight: 500;
+}
+.fav-card-quantity-actions {
+  display: flex;
+  padding-left: 16px;
+}
+.fav-card-quantity-actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.fav-card-quantity-actions p {
+  padding: 0 8px;
+  opacity: 0.6;
+  font-weight: 500;
+}
+.fav-card-btn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-right: 14px;
+}
+.fav-card-bottom {
+  padding-top: 16px;
+}
+.fav-card-bottom p {
+  padding-top: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .fav-card-top img {
+    height: 120px;
+  }
+  .fav-card-header {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+  .fav-card-name {
+    font-size: 16px;
+    line-height: 0.95;
+  }
+}/*# sourceMappingURL=FavoriteItemCard.css.map */

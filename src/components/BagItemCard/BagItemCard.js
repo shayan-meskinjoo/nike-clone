@@ -1,5 +1,6 @@
 import React from "react";
 import "./style/BagItemCard.css";
+import { Link } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux";
 import AddBoxIcon from "@mui/icons-material/AddBox";
 import IndeterminateCheckBoxIcon from "@mui/icons-material/IndeterminateCheckBox";
@@ -23,10 +24,14 @@ export default function BagItemCard({ data }) {
   return (
     <div className="bag-card">
       <div className="bag-card-top">
-        <img src={img}></img>
+        <Link to={`/productdetail/${id}`}>
+          <img src={img}></img>
+        </Link>
         <div className="bag-card-info">
           <div className="bag-card-header">
-            <p className="bag-card-name">{name}</p>
+            <Link to={`/productdetail/${id}`}>
+              <p className="bag-card-name">{name}</p>
+            </Link>
             <p className="bag-card-price">${(price * amount).toFixed(2)}</p>
           </div>
           <p className="bag-card-gender">{`${gender}'s ${category}`}</p>

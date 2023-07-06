@@ -3,9 +3,9 @@ import "./style/ProductDetail.css";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { addToBag } from "../../features/productsSlice";
+import { addToBag, addToFav } from "../../features/productsSlice";
 import MemberShip from "../MemberShip/MemberShip";
-
+import TrendProducts from "../TrendProducts/TrendProducts";
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -32,7 +32,7 @@ export default function ProductDetail() {
             <button onClick={() => dispatch(addToBag(id))}>Add to Bag</button>
           </div>
           <div className="detail-addfav">
-            <button>
+            <button onClick={() => dispatch(addToFav(id))}>
               Favorite
               <FavoriteBorderOutlinedIcon />
             </button>
@@ -53,7 +53,7 @@ export default function ProductDetail() {
           <button onClick={() => dispatch(addToBag(id))}>Add to Bag</button>
         </div>
         <div className="detail-mobile-addfav">
-          <button>
+          <button onClick={() => dispatch(addToFav(id))}>
             Favorite
             <FavoriteBorderOutlinedIcon />
           </button>
@@ -63,7 +63,7 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      {/* trending */}
+      <TrendProducts />
       <MemberShip />
     </div>
   );

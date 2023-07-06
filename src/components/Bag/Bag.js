@@ -2,6 +2,7 @@ import React from "react";
 import "./style/Bag.css";
 import { useSelector } from "react-redux";
 import BagItemCard from "../BagItemCard/BagItemCard";
+import TrendProducts from "../TrendProducts/TrendProducts";
 
 export default function Bag() {
   const bagItems = useSelector((state) => state.products.bagItems);
@@ -62,6 +63,8 @@ export default function Bag() {
           <button className="paypal-btn">PayPal</button>
         </div>
       </div>
+
+      <TrendProducts />
     </div>
   );
 }

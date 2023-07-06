@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Oswald:wght@700&display=swap");
+.favorite {
+  width: 60%;
+  margin: 32px auto;
+}
+.favorite-p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .favorite {
+    width: 90%;
+  }
+}/*# sourceMappingURL=Favorites.css.map */

@@ -1,0 +1,25 @@
+@import "../../general-styles/__general";
+
+.trendcard {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+
+  img {
+    height: 260px;
+  }
+
+  &-name {
+    padding-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+@include mobile {
+  .trendcard {
+    img {
+      height: 160px;
+    }
+  }
+}

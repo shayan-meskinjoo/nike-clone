@@ -1,0 +1,22 @@
+@import "../../general-styles/__general";
+
+.trend-list {
+  padding: 160px 24px 120px;
+}
+
+.trend-text {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 48px;
+  padding-left: 24px;
+}
+
+@include mobile {
+.trend-list {
+  padding: 160px 16px 120px;
+
+}
+.trend-text {
+  padding-left: 8px;
+}
+}

@@ -7,6 +7,7 @@ import Women from "./components/Women/Women";
 import ProductsList from "./components/ProductsList/ProductsList";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 import Bag from "./components/Bag/Bag";
+import Favorites from "./components/Favorites/Favorites";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="productslist" element={<ProductsList />} />
             <Route path="productdetail/:id" element={<ProductDetail />}/>
             <Route path="cart" element={<Bag />}/>
+            <Route path="favorites" element={<Favorites />}/>
           </Route>
         </Routes>
       </Router>

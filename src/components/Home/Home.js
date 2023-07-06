@@ -7,6 +7,7 @@ import banner2 from "../images/nike/home/nike-just-do-it.jpg";
 import banner2mobile from "../images/nike/home/9cddde26-f335-4989-a72d-ab76f1f49124.webp";
 
 import MemberShip from "../MemberShip/MemberShip";
+import TrendProducts from "../TrendProducts/TrendProducts";
 
 export default function Home() {
   return (
@@ -69,6 +70,7 @@ export default function Home() {
       </div>
 
       {/* trending products cruasel */}
+      <TrendProducts />
       <MemberShip />
     </div>
   );
