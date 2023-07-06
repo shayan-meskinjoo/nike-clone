@@ -21,7 +21,7 @@ export default function Home() {
               Members: Sine in and use code SUMMER to save. End 6.26. Exclusions
               apply.
             </p>
-            <Link>
+            <Link to="productslist" state={{gender: "women", category: "shoes"}}>
               <button>Shop</button>
             </Link>
           </div>
@@ -32,7 +32,7 @@ export default function Home() {
             Members: Sine in and use code SUMMER to save. End 6.26. Exclusions
             apply.
           </p>
-          <Link>
+          <Link to="productslist" state={{gender: "women", category: "shoes"}}>
             <button>Shop</button>
           </Link>
         </div>

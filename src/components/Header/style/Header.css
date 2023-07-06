@@ -114,6 +114,7 @@
     display: block;
     width: 65%;
     transition: all 0.2s;
+    z-index: 1;
   }
   .header-sidebar__nav a {
     height: 50px;

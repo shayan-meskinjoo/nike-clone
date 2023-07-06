@@ -3,7 +3,7 @@ export const setting = {
   infinite: false,
   speed: 500,
   slidesToShow: 5,
-  slidesToScroll: 4,
+  slidesToScroll: 3,
   responsive: [
     {
       breakpoint: 600,

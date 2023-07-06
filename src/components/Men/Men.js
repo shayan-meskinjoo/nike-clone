@@ -7,6 +7,7 @@ import banner21 from "../images/nike/40574f20-994a-4b82-a1ba-498f165c48cd.webp";
 import banner22 from "../images/nike/817c49e0-7942-4977-a42b-303e020ca235.webp";
 import banner23 from "../images/nike/a763a13e-fd7c-43ab-b345-abf1ee09f440.webp";
 import MemberShip from "../MemberShip/MemberShip";
+import TrendProducts from "../TrendProducts/TrendProducts";
 
 export default function Men() {
   return (
@@ -46,7 +47,10 @@ export default function Men() {
             takes you.
           </p>
           <div className="banner-1-info-btn">
-            <Link>
+            <Link
+              to="/productslist"
+              state={{ gender: "men", category: "shoes" }}
+            >
               <button>Shop</button>
             </Link>
           </div>
@@ -124,6 +128,7 @@ export default function Men() {
         </div>
       </div>
 
+      <TrendProducts />
       <MemberShip />
     </div>
   );

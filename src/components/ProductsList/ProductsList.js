@@ -33,7 +33,6 @@ export default function ProductsList() {
         ))}
       </div>
 
-      {/* trending list */}
     </div>
   );
 }

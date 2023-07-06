@@ -1,7 +1,7 @@
 @import "../../general-styles/__general";
 
 .trend-list {
-  padding: 160px 24px 120px;
+  padding: 160px 28px 120px;
 }
 
 .trend-text {
@@ -12,11 +12,10 @@
 }
 
 @include mobile {
-.trend-list {
-  padding: 160px 16px 120px;
-
-}
-.trend-text {
-  padding-left: 8px;
-}
+  .trend-list {
+    padding: 160px 26px 120px;
+  }
+  .trend-text {
+    padding-left: 8px;
+  }
 }

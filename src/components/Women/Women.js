@@ -8,6 +8,7 @@ import banner22 from "../images/nike/women/13d92c0e-d620-4518-bb32-ee9f47737157.
 import banner23 from "../images/nike/a763a13e-fd7c-43ab-b345-abf1ee09f440.webp";
 
 import MemberShip from "../MemberShip/MemberShip";
+import TrendProducts from "../TrendProducts/TrendProducts";
 
 export default function Women() {
   return (
@@ -44,7 +45,7 @@ export default function Women() {
           <h1>STYLISH SETS FOR EVERY MOVE</h1>
           <p>Bras and leggings to feel good on your body.</p>
           <div className="banner-1-women-info-btn">
-            <Link>
+            <Link to="/productslist" state={{gender: "women", category: "clothing"}}>
               <button>Shop</button>
             </Link>
           </div>
@@ -137,7 +138,7 @@ export default function Women() {
         </div>
       </div>
 
-      {/* trending list */}
+      <TrendProducts />
       <MemberShip />
     </div>
   );

@@ -31,7 +31,7 @@ export default function Header() {
     <div className="header">
       <div className="header__content">
         <div className="header__logo">
-          <img src={logo}></img>
+          <Link to="/"><img src={logo}></img></Link>
         </div>
         <div className="header__nav">
           <Link to="men">Men</Link>
@@ -59,7 +59,7 @@ export default function Header() {
 
         <div className="header-sidebar">
           <div className="header-sidebar__logo">
-            <img src={logo}></img>
+            <Link to="/"><img src={logo}></img></Link>
           </div>
           <div className={`header-sidebar__nav ${isOpen && "isopen"}`}>
             <Link>
